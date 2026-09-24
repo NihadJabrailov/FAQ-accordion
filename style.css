@@ -1,0 +1,105 @@
+/*Burdan işarəli yerə qədər ümumi istifadə olunacaq stillərdir*/
+:root {
+    --background-color: hsl(275, 100%, 97%);
+    --heading-color: hsl(292, 42%, 14%);
+    --p-color: hsl(292, 16%, 49%);
+    --white-color: hsl(0, 100%, 100%);
+    --txt-question-hover: hsl(292, 16%, 49%);
+}
+
+.text-h1 {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--heading-color);
+}
+
+.text-questions {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--heading-color);
+}
+
+.text-questions:hover {
+    color: var(--txt-question-hover);
+}
+
+.text-p {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--p-color);
+}
+
+/*------------------------------------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.container {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav-image img {
+    width: 100%;
+}
+
+.card-main {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+}
+
+.card-word {
+    background-color: var(--white-color);
+    border-radius: 10px;
+    margin: 0 20px;
+    margin-top: -200px;
+}
+
+.FAQs-word {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.answer {
+    display: none;
+    padding: 0 20px 10px 20px;
+}
+
+.answer.open {
+    display: block;
+}
