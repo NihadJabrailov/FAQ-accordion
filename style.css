@@ -45,6 +45,9 @@
 
 body {
     background-color: var(--background-color);
+    background-image: url('images/background-pattern-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }
 
 .container {
@@ -55,16 +58,7 @@ body {
     align-items: center;
 }
 
-.nav-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
 
-.nav-image img {
-    width: 100%;
-}
 
 .card-main {
     position: relative;
@@ -102,4 +96,16 @@ body {
 
 .answer.open {
     display: block;
+}
+
+@media (min-width: 768px) {
+    body {
+        background-image: url('images/background-pattern-desktop.svg');
+    }
+
+    .card-word {
+        width: 600px;
+        margin: -150px auto 0 auto;
+        padding: 30px;
+    }
 }
